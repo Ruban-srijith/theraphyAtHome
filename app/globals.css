@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #F7FAFE;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #0A84FF;
+  --primary-foreground: #ffffff;
+  --secondary: #EBF2FF;
+  --secondary-foreground: #1E3A8A;
+  --muted: #E8EFF8;
+  --muted-foreground: #5B6B82;
+  --accent: #0A84FF;
+  --accent-foreground: #ffffff;
+  --destructive: #DC2626;
+  --destructive-foreground: #ffffff;
+  --border: #DDE8F5;
+  --input: #E8EFF8;
+  --ring: #0A84FF;
+  --radius: 0.875rem;
+  --heading: #0F2356;
+}
+
+@theme inline {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-heading: var(--heading);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* WhatsApp pulse ring */
+@keyframes wa-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.55); }
+  70%  { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+.wa-pulse {
+  animation: wa-pulse 2.2s ease-out infinite;
+}
+
+/* Fade-in animation — CSS only, no IntersectionObserver overhead */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.16,1,0.3,1) both;
+}
+.animate-fade-in {
+  animation: fade-in 0.6s ease both;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }

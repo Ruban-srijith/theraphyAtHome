@@ -1,0 +1,24 @@
+# Therapy at Home
+
+> Therapy at Home (therapyathome.in) is a home-based physiotherapy and Ayurveda service in Coimbatore and Theni, Tamil Nadu, India. We specialize in neck and back pain relief through certified therapists who visit patients at their homes.
+
+##  Services
+
+- [Physiotherapy at Home](/services#physiotherapy): Certified physiotherapists providing pain relief and rehabilitation at your doorstep
+- [Abhyanga Ayurvedic Massage](/services#abhyanga): Traditional full-body Ayurvedic oil massage for pain relief and relaxation
+- [Portable Steam Bath](/services#steam): Portable steam therapy session delivered at home for muscle relief and detox
+- [Plantain Leaf Bath](/services#plantain): Signature Ayurvedic treatment using plantain leaves for therapeutic healing
+
+## About
+
+- [About Us](/about): Learn about Therapy at Home, our approach, and our trained therapists
+- [FAQ](/faq): Common questions about our home visit services, pricing, and coverage areas
+
+## Contact & Booking
+
+- [Book a Session](/contact): Schedule a home visit in Coimbatore & Theni
+- [Home](/)): Overview of all services and patient testimonials
+
+## Coverage Areas
+
+We serve patients across Coimbatore and Theni, Tamil Nadu. Sessions are conducted at the patient's home — no clinic visit required.
