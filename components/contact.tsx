@@ -36,7 +36,7 @@ const socials = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/company/therapyathome",
+    href: "https://in.linkedin.com/in/mathan-kumar-134b3a341",
     color: "bg-[#0A66C2] hover:bg-[#0958a8]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5 fill-white" xmlns="http://www.w3.org/2000/svg">
