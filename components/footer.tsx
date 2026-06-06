@@ -39,7 +39,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex flex-col items-center gap-1.5 md:items-start">
             <a href="#" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-heading">
-              <img src="IMG_6333.JPG" alt="Therapy at Home Logo" className="h-10 w-auto" />
+             <img src="/logo.webp" alt="Therapy at Home Logo" className="h-10 w-auto" />
               Therapy at <span className="text-primary">Home</span>
             </a>
             <p className="text-base text-muted-foreground">Home Physiotherapy in Theni, Tamil Nadu</p>
