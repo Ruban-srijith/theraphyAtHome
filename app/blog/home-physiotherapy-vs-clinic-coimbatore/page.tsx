@@ -1,4 +1,39 @@
+import type { Metadata } from "next";
 import Script from 'next/script'
+
+
+export const metadata: Metadata = {
+  title: "Home Physiotherapy vs Clinic: Which is Better for Back Pain in Coimbatore?",
+  description:
+    "An honest head-to-head comparison — attention, cost, convenience, and outcomes. Includes a real cost breakdown for 10 sessions in Coimbatore. By Therapy at Home.",
+  alternates: {
+    canonical: "https://therapyathome.in/blog/home-physiotherapy-vs-clinic-coimbatore",
+  },
+  openGraph: {
+    title: "Home Physiotherapy vs Clinic: Which is Better for Back Pain in Coimbatore?",
+    description:
+      "An honest head-to-head comparison — attention, cost, convenience, and outcomes. Includes a real cost breakdown for 10 sessions in Coimbatore.",
+    url: "https://therapyathome.in/blog/home-physiotherapy-vs-clinic-coimbatore",
+    siteName: "Therapy at Home",
+    type: "article",
+    images: [
+      {
+        url: "https://therapyathome.in/og-home.jpg",
+        width: 1200,
+        height: 628,
+        alt: "Home physiotherapy vs clinic comparison for back pain treatment in Coimbatore",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@therapyathome",
+    title: "Home Physiotherapy vs Clinic: Which is Better for Back Pain in Coimbatore?",
+    description:
+      "An honest head-to-head comparison — attention, cost, convenience, and outcomes. Includes a real cost breakdown for 10 sessions in Coimbatore.",
+    images: ["https://therapyathome.in/og-home.jpg"],
+  },
+};
 
 const faqSchema = {
   "@context": "https://schema.org",

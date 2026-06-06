@@ -1,4 +1,40 @@
+import type { Metadata } from "next";
 import Script from 'next/script'
+
+
+
+export const metadata: Metadata = {
+  title: "What is Abhyanga Massage? Benefits, Process and Who Should Try It",
+  description:
+    "A complete guide to Abhyanga — the traditional Ayurvedic full-body oil massage. What it is, which oils are used, what happens during a session, and who benefits most.",
+  alternates: {
+    canonical: "https://therapyathome.in/blog/what-is-abhyanga-massage",
+  },
+  openGraph: {
+    title: "What is Abhyanga Massage? Benefits, Process and Who Should Try It",
+    description:
+      "A complete guide to Abhyanga — the traditional Ayurvedic full-body oil massage. What it is, which oils are used, what happens during a session, and who benefits most.",
+    url: "https://therapyathome.in/blog/what-is-abhyanga-massage",
+    siteName: "Therapy at Home",
+    type: "article",
+    images: [
+      {
+        url: "https://therapyathome.in/og-home.jpg",
+        width: 1200,
+        height: 628,
+        alt: "Abhyanga Ayurvedic oil massage at home by Therapy at Home",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@therapyathome",
+    title: "What is Abhyanga Massage? Benefits, Process and Who Should Try It",
+    description:
+      "A complete guide to Abhyanga — the traditional Ayurvedic full-body oil massage. What it is, which oils are used, what happens during a session, and who benefits most.",
+    images: ["https://therapyathome.in/og-home.jpg"],
+  },
+};
 
 const faqSchema = {
   "@context": "https://schema.org",

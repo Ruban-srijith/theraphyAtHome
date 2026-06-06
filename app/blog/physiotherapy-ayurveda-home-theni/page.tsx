@@ -1,4 +1,39 @@
+import type { Metadata } from "next";
 import Script from 'next/script'
+
+
+export const metadata: Metadata = {
+  title: "Ayurveda and Physiotherapy at Home in Theni — Now Available",
+  description:
+    "Certified physiotherapy and Ayurvedic treatment now available at your home across Theni district. No need to travel to Madurai or Coimbatore. Book Therapy at Home.",
+  alternates: {
+    canonical: "https://therapyathome.in/blog/physiotherapy-ayurveda-home-theni",
+  },
+  openGraph: {
+    title: "Ayurveda and Physiotherapy at Home in Theni — Now Available",
+    description:
+      "Certified physiotherapy and Ayurvedic treatment now available at your home across Theni district. No need to travel to Madurai or Coimbatore.",
+    url: "https://therapyathome.in/blog/physiotherapy-ayurveda-home-theni",
+    siteName: "Therapy at Home",
+    type: "article",
+    images: [
+      {
+        url: "https://therapyathome.in/og-home.jpg",
+        width: 1200,
+        height: 628,
+        alt: "Physiotherapy and Ayurveda home visit in Theni by Therapy at Home",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@therapyathome",
+    title: "Ayurveda and Physiotherapy at Home in Theni — Now Available",
+    description:
+      "Certified physiotherapy and Ayurvedic treatment now available at your home across Theni district. No need to travel to Madurai or Coimbatore.",
+    images: ["https://therapyathome.in/og-home.jpg"],
+  },
+};
 
 const faqSchema = {
   "@context": "https://schema.org",

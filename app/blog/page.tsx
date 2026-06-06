@@ -1,19 +1,38 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Health & Wellness Blog | Therapy at Home',
+  title: "Physiotherapy & Ayurveda Blog | Therapy at Home",
   description:
-    'Expert articles on physiotherapy, Ayurvedic treatment, back pain relief, and home healthcare in Coimbatore and Theni. Written by certified therapists at Therapy at Home.',
-  openGraph: {
-    title: 'Health & Wellness Blog | Therapy at Home',
-    description:
-      'Expert articles on physiotherapy, Ayurveda, and home healthcare in Coimbatore and Theni.',
-    url: 'https://therapyathome.in/blog',
-    siteName: 'Therapy at Home',
-    type: 'website',
+    "Expert articles on physiotherapy, Ayurvedic treatment, back pain relief, and home healthcare in Coimbatore and Theni. Written by certified therapists at Therapy at Home.",
+  alternates: {
+    canonical: "https://therapyathome.in/blog",
   },
-}
+  openGraph: {
+    title: "Physiotherapy & Ayurveda Blog | Therapy at Home",
+    description:
+      "Expert articles on physiotherapy, Ayurveda, and home healthcare in Coimbatore and Theni.",
+    url: "https://therapyathome.in/blog",
+    siteName: "Therapy at Home",
+    type: "website",
+    images: [
+      {
+        url: "https://therapyathome.in/og-home.jpg",
+        width: 1200,
+        height: 628,
+        alt: "Therapy at Home blog — physiotherapy and Ayurveda articles",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@therapyathome",
+    title: "Physiotherapy & Ayurveda Blog | Therapy at Home",
+    description:
+      "Expert articles on physiotherapy, Ayurveda, and home healthcare in Coimbatore and Theni.",
+    images: ["https://therapyathome.in/og-home.jpg"],
+  },
+};
 
 const posts = [
   {

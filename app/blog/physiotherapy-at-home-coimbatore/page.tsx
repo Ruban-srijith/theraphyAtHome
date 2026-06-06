@@ -1,4 +1,39 @@
+import type { Metadata } from "next";
 import Script from 'next/script'
+
+
+export const metadata: Metadata = {
+  title: "Physiotherapy at Home in Coimbatore: Cost, What to Expect & How to Book",
+  description:
+    "Everything you need to know before booking a home physiotherapy session in Coimbatore — conditions treated, session flow, cost, and areas covered. Therapy at Home.",
+  alternates: {
+    canonical: "https://therapyathome.in/blog/physiotherapy-at-home-coimbatore",
+  },
+  openGraph: {
+    title: "Physiotherapy at Home in Coimbatore: Cost, What to Expect & How to Book",
+    description:
+      "Everything you need to know before booking a home physiotherapy session in Coimbatore — conditions treated, session flow, cost, and areas covered.",
+    url: "https://therapyathome.in/blog/physiotherapy-at-home-coimbatore",
+    siteName: "Therapy at Home",
+    type: "article",
+    images: [
+      {
+        url: "https://therapyathome.in/og-home.jpg",
+        width: 1200,
+        height: 628,
+        alt: "Home physiotherapy session in Coimbatore by Therapy at Home",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@therapyathome",
+    title: "Physiotherapy at Home in Coimbatore: Cost, What to Expect & How to Book",
+    description:
+      "Everything you need to know before booking a home physiotherapy session in Coimbatore — conditions treated, session flow, cost, and areas covered.",
+    images: ["https://therapyathome.in/og-home.jpg"],
+  },
+};
 
 const faqSchema = {
   "@context": "https://schema.org",

@@ -1,4 +1,38 @@
+import type { Metadata } from "next";
 import Script from 'next/script'
+
+export const metadata: Metadata = {
+  title: "5 Reasons Your Neck and Back Pain Isn't Going Away (And What Actually Helps)",
+  description:
+    "Most people treat the symptom, not the cause. Here are the five real reasons chronic back and neck pain keeps returning — and what actually fixes it. By Therapy at Home.",
+  alternates: {
+    canonical: "https://therapyathome.in/blog/back-pain-not-going-away",
+  },
+  openGraph: {
+    title: "5 Reasons Your Neck and Back Pain Isn't Going Away (And What Actually Helps)",
+    description:
+      "Most people treat the symptom, not the cause. Here are the five real reasons chronic back and neck pain keeps returning — and what actually fixes it.",
+    url: "https://therapyathome.in/blog/back-pain-not-going-away",
+    siteName: "Therapy at Home",
+    type: "article",
+    images: [
+      {
+        url: "https://therapyathome.in/og-home.jpg",
+        width: 1200,
+        height: 628,
+        alt: "Physiotherapist explaining chronic back pain causes at home visit in Theni",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@therapyathome",
+    title: "5 Reasons Your Neck and Back Pain Isn't Going Away (And What Actually Helps)",
+    description:
+      "Most people treat the symptom, not the cause. Here are the five real reasons chronic back and neck pain keeps returning — and what actually fixes it.",
+    images: ["https://therapyathome.in/og-home.jpg"],
+  },
+};
 
 const faqSchema = {
   "@context": "https://schema.org",
