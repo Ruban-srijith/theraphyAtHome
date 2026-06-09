@@ -28,7 +28,7 @@ export function Hero() {
 
             <h1 className="animate-fade-up text-5xl font-extrabold leading-[1.06] tracking-tight text-heading sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl">
               Home<br />Physiotherapy
-              <br /><span className="text-primary">in Theni.</span>
+              <br /><span className="text-primary">in Theni & Coimbatore.</span>
             </h1>
 
             <p className="animate-fade-up delay-200 mx-auto mt-7 max-w-lg text-lg font-medium leading-relaxed text-foreground/70 sm:text-xl lg:mx-0">
@@ -66,7 +66,9 @@ export function Hero() {
               </div>
               <div className="absolute -bottom-4 -left-4 rounded-2xl border border-border bg-white px-6 py-4 shadow-xl">
                 <p className="text-2xl font-extrabold text-primary">#1</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Home Physio in Theni</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Home Physio in Theni & Coimbatore
+                  
+                </p>
               </div>
               <div className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-green-500 ring-2 ring-white">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-50" />
