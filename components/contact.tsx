@@ -9,7 +9,7 @@ const WA_MESSAGE = "Hi! I'd like to book a home physiotherapy session in Theni."
 const info = [
   { icon: MapPin, label: "Address", value: "126/ Eadamal Street, Near Hema Dental Clinic, Theni – 625531" },
   { icon: Phone, label: "Phone", value: "+91 93427 05088", href: "tel:+919342705088" },
-  { icon: Mail, label: "Email", value: "therapyathome888@gmail.com", href: "mailto:therapyathome888@gmail.com" },
+  { icon: Mail, label: "Email", value: "theraphyathome888@gmail.com", href: "mailto:theraphyathome888@gmail.com" },
   { icon: Clock, label: "Hours", value: "Mon – Sat, 7 AM – 9 PM" },
 ]
 

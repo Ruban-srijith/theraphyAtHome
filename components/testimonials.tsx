@@ -3,7 +3,7 @@ import { Star } from "lucide-react"
 const testimonials = [
   { name: "Murugan K", role: "Patient, Theni", quote: "I had severe lower back pain for over a year. Therapy at Home sent a therapist to my house and within a few sessions I felt real relief. No need to travel anywhere.", stars: 5 },
   { name: "Lakshmi S", role: "Patient, Theni", quote: "The neck pain I had from sitting at my desk all day was unbearable. The home physiotherapy treatment fixed it completely. Very professional service.", stars: 5 },
-  { name: "Selvam R", role: "Patient,Coimbatore", quote: "Steam therapy at home was very convenient. The therapist came on time with all equipment. My joint pain reduced a lot.", stars: 5 },
+  { name: "Selvam R", role: "Patient, Theni", quote: "Steam therapy at home was very convenient. The therapist came on time with all equipment. My joint pain reduced a lot after just 3 sessions.", stars: 5 },
 ]
 
 export function Testimonials() {
@@ -13,7 +13,7 @@ export function Testimonials() {
         <div className="mb-16 text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-primary mb-3">Testimonials</p>
           <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-heading sm:text-5xl md:text-6xl">
-            Trusted by patients.
+            Trusted by patients in Theni.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
             Real stories from real patients who recovered at home with Therapy at Home.
