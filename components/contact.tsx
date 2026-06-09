@@ -4,12 +4,12 @@ import { MapPin, Phone, Mail, Clock, Send, Check, AlertCircle } from "lucide-rea
 
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyzUdeM72Qc6O59xRdUPEKGn949ayUqHdQTIR-BthNKloA_cZiukiL0DW2y-1Q5vqKVWQ/exec"
 const WA_NUMBER = "919342705088"
-const WA_MESSAGE = "Hi! I'd like to book a home physiotherapy session in Theni."
+const WA_MESSAGE = "Hi! I'd like to book a home physiotherapy session."
 
 const info = [
   { icon: MapPin, label: "Address", value: "126/ Eadamal Street, Near Hema Dental Clinic, Theni – 625531" },
   { icon: Phone, label: "Phone", value: "+91 93427 05088", href: "tel:+919342705088" },
-  { icon: Mail, label: "Email", value: "theraphyathome888@gmail.com", href: "mailto:theraphyathome888@gmail.com" },
+  { icon: Mail, label: "Email", value: "therapyathome888@gmail.com", href: "mailto:therapyathome888@gmail.com" },
   { icon: Clock, label: "Hours", value: "Mon – Sat, 7 AM – 9 PM" },
 ]
 
@@ -82,7 +82,7 @@ export function Contact() {
         <div className="mb-16 text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-primary mb-3">Contact</p>
           <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-heading sm:text-5xl md:text-6xl">
-            Book a home visit in Theni.
+            Book your home visit now.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
             Fill the form and we will confirm your home session within 24 hours.

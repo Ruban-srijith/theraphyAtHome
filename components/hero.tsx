@@ -28,7 +28,7 @@ export function Hero() {
 
             <h1 className="animate-fade-up text-5xl font-extrabold leading-[1.06] tracking-tight text-heading sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl">
               Home<br />Physiotherapy
-              <br /><span className="text-primary">in Theni.</span>
+              <br /><span className="text-primary">in Theni & Coimbatore</span>
             </h1>
 
             <p className="animate-fade-up delay-200 mx-auto mt-7 max-w-lg text-lg font-medium leading-relaxed text-foreground/70 sm:text-xl lg:mx-0">
@@ -52,7 +52,7 @@ export function Hero() {
               <div className="flex">
                 {[1,2,3,4,5].map(i => <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />)}
               </div>
-              <span className="text-base text-muted-foreground">Trusted by 500+ patients in Theni</span>
+              <span className="text-base text-muted-foreground">Trusted by 500+ patients in Theni </span>
             </div>
           </div>
 
@@ -61,12 +61,13 @@ export function Hero() {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="overflow-hidden rounded-[1.75rem] shadow-[0_20px_60px_rgba(15,23,42,0.10)] ring-1 ring-border aspect-square">
                 <Image src="/images/hero.jpg"
-                  alt="Home physiotherapy treatment for neck and back pain in Theni"
+                  alt="Home physiotherapy treatment for neck and back pain in Theni & Coimbatore"
+                  
                   fill className="object-cover" priority />
               </div>
               <div className="absolute -bottom-4 -left-4 rounded-2xl border border-border bg-white px-6 py-4 shadow-xl">
                 <p className="text-2xl font-extrabold text-primary">#1</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Home Physio in Theni</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Home Physio in Theni & Coimbatore</p>
               </div>
               <div className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-green-500 ring-2 ring-white">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-50" />

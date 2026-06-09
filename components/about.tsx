@@ -17,7 +17,7 @@ export function About() {
           <div className="relative order-last lg:order-first">
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-border">
               <Image src="/images/about.jpg"
-                alt="Therapy at Home physiotherapist treating patient at home in Theni"
+                alt="Therapy at Home physiotherapist treating patient at home in Theni & Coimbatore"
                 width={600} height={450} className="h-full w-full object-cover" loading="lazy" />
             </div>
             <div className="absolute -bottom-6 -right-4 rounded-2xl border border-border bg-white px-6 py-5 shadow-xl">
@@ -30,10 +30,10 @@ export function About() {
           <div>
             <p className="text-sm font-bold uppercase tracking-widest text-primary mb-4">About Us</p>
             <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-heading sm:text-5xl md:text-6xl">
-              Physiotherapy at<br />your home in Theni.
+              Physiotherapy at<br />your home in Theni & Coimbatore.
             </h2>
             <p className="mt-7 text-lg leading-relaxed text-muted-foreground md:text-xl">
-              Therapy at Home brings professional physiotherapy directly to your doorstep in Theni. We specialise in treating neck pain, back pain and providing steam therapy — without you leaving home.
+              Therapy at Home brings professional physiotherapy directly to your doorstep in Theni & Coimbatore. We specialise in treating neck pain, back pain and providing steam therapy — without you leaving home.
             </p>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground md:text-xl">
               Our trained therapists visit with all necessary equipment and create personalised treatment plans for real relief and lasting recovery.
