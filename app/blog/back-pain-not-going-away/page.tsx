@@ -94,7 +94,7 @@ export default function BackPainPost() {
         <h1 className="text-3xl font-bold mb-4">
           5 Reasons Your Neck and Back Pain Isn't Going Away (And What Actually Helps)
         </h1>
-        <p className="text-sm text-gray-500 mb-8">By Therapy at Home | therapyathome.in</p>
+        <p className="text-sm text-gray-500 mb-8">By  Mathan kumar D | Therapy at Home</p>
 
         <p className="mb-6">
           If you've been dealing with neck or back pain for weeks — or even months — you're not alone.

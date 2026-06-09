@@ -11,24 +11,24 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://therapyathome.in'),
-  title: 'Home Physiotherapy in Theni | Neck & Back Pain Relief',
+  title: 'Home Physiotherapy in Theni & Coimbatore| Neck & Back Pain Relief',
   description:
-    'Professional physiotherapy at your home in Theni. Specialized treatments for neck pain, back pain & steam therapy. Book your session: +91 93427 05088.',
+    'Professional physiotherapy at your home. Specialized treatments for neck pain, back pain & steam therapy. Book your session: +91 93427 05088.',
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     url: 'https://therapyathome.in',
     siteName: 'Therapy at Home',
-    title: 'Home Physiotherapy in Theni | Neck & Back Pain Relief',
+    title: 'Home Physiotherapy in Theni & Coimbatore | Neck & Back Pain Relief',
     description:
-      'Professional physiotherapy at your home in Theni. Specialized treatments for neck pain, back pain & steam therapy. Book now.',
+      'Professional physiotherapy at your home in Theni & Coimbatore. Specialized treatments for neck pain, back pain & steam therapy. Book now.',
     images: [{ url: '/og-home.jpg', width: 1200, height: 628, alt: 'Therapist providing home physiotherapy session in Theni' }],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@therapyathome',
-    title: 'Home Physiotherapy in Theni | Neck & Back Pain Relief',
-    description: 'Professional physiotherapy at your home in Theni. Specialized treatments for neck pain, back pain & steam therapy. Book now.',
+    title: 'Home Physiotherapy in Theni & Coimbatore | Neck & Back Pain Relief',
+    description: 'Professional physiotherapy at your home in Theni & Coimbatore. Specialized treatments for neck pain, back pain & steam therapy. Book now.',
     images: [{ url: '/og-home.jpg', alt: 'Therapist providing home physiotherapy session in Theni' }],
   },
   icons: {
@@ -50,7 +50,7 @@ const schemaMarkup = {
   url: 'https://therapyathome.in',
   logo: 'https://therapyathome.in/icon.svg',
   image: 'https://therapyathome.in/og-home.jpg',
-  description: 'Therapy at Home provides professional in-home physiotherapy and pain relief services in Theni.',
+  description: 'Therapy at Home provides professional in-home physiotherapy and pain relief services in Theni & Coimbatore.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Eadamal Street',
