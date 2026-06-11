@@ -3,7 +3,7 @@ import { Star } from "lucide-react"
 const testimonials = [
   { name: "Murugan K", role: "Patient, Theni", quote: "I had severe lower back pain for over a year. Therapy at Home sent a therapist to my house and within a few sessions I felt real relief. No need to travel anywhere.", stars: 5 },
   { name: "Lakshmi S", role: "Patient, Theni", quote: "The neck pain I had from sitting at my desk all day was unbearable. The home physiotherapy treatment fixed it completely. Very professional service.", stars: 5 },
-  { name: "Selvam R", role: "Patient,Coimbatore", quote: "Steam therapy at home was very convenient. The therapist came on time with all equipment. My joint pain reduced a lot after just 3 sessions.", stars: 5 },
+  { name: "Selvam R", role: "Patient,Coimbatore", quote: "Steam therapy at home was very convenient. The therapist came on time with all equipment. My joint pain reduced a lot.", stars: 5 },
 ]
 
 export function Testimonials() {

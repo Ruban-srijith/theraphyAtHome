@@ -10,6 +10,10 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
+  icons: {
+  icon: { url: '/favicon.jpg', type: 'image/jpeg', sizes: '512x512' },
+  apple: '/favicon.jpg',
+},
   metadataBase: new URL('https://therapyathome.in'),
   title: 'Home Physiotherapy in Theni & Coimbatore| Neck & Back Pain Relief',
   description:
@@ -66,14 +70,16 @@ const schemaMarkup = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
+    
     <html lang="en" className={jakarta.variable}>
-      <head>
-        <script id="schema-markup" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
-      </head>
-      <body className="font-sans antialiased">
-        {children}
-        <Analytics />
-      </body>
-    </html>
+  <head>
+    <script id="schema-markup" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
+    <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
+  </head>
+  <body className="font-sans antialiased">
+    {children}
+    <Analytics />
+  </body>
+</html>
   )
 }
