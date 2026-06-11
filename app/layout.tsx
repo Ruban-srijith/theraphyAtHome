@@ -11,9 +11,9 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   icons: {
-  icon: { url: '/favicon.jpg', type: 'image/jpeg', sizes: '512x512' },
-  apple: '/favicon.jpg',
-},
+    icon: { url: '/favicon.jpg', type: 'image/jpeg', sizes: '512x512' },
+    apple: '/favicon.jpg',
+  },
   metadataBase: new URL('https://therapyathome.in'),
   title: 'Home Physiotherapy in Theni & Coimbatore| Neck & Back Pain Relief',
   description:
@@ -35,14 +35,6 @@ export const metadata: Metadata = {
     description: 'Professional physiotherapy at your home in Theni & Coimbatore. Specialized treatments for neck pain, back pain & steam therapy. Book now.',
     images: [{ url: '/og-home.jpg', alt: 'Therapist providing home physiotherapy session in Theni' }],
   },
-  icons: {
-    icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-icon.png',
-  },
 }
 
 export const viewport: Viewport = { themeColor: '#F7FAFE' }
@@ -52,7 +44,7 @@ const schemaMarkup = {
   '@type': 'MedicalBusiness',
   name: 'Therapy at Home',
   url: 'https://therapyathome.in',
-  logo: 'https://therapyathome.in/icon.svg',
+  logo: 'https://therapyathome.in/favicon.jpg',
   image: 'https://therapyathome.in/og-home.jpg',
   description: 'Therapy at Home provides professional in-home physiotherapy and pain relief services in Theni & Coimbatore.',
   address: {
@@ -70,16 +62,15 @@ const schemaMarkup = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    
     <html lang="en" className={jakarta.variable}>
-  <head>
-    <script id="schema-markup" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
-    <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
-  </head>
-  <body className="font-sans antialiased">
-    {children}
-    <Analytics />
-  </body>
-</html>
+      <head>
+        <script id="schema-markup" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
+        <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
+      </head>
+      <body className="font-sans antialiased">
+        {children}
+        <Analytics />
+      </body>
+    </html>
   )
 }
