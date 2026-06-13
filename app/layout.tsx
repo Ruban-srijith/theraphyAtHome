@@ -65,7 +65,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={jakarta.variable}>
       <head>
         <script id="schema-markup" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
-        <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
+        <link rel="icon" href="/favicon2.jpg" type="image/jpeg" />
       </head>
       <body className="font-sans antialiased">
         {children}
