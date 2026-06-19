@@ -65,6 +65,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={jakarta.variable}>
       <head>
+        <meta name="facebook-domain-verification" content="3iw7zhbq5uwwhujdghb6hrcl2z46ur" />
         <script id="schema-markup" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
         <link rel="icon" href="/favicon2.jpg" type="image/jpeg" />
       </head>
@@ -85,7 +86,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             fbq('track', 'PageView');
           `}
         </Script>
-        <noscript>
+        <noscript> 
           <img
             height="1"
             width="1"
