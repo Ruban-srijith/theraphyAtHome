@@ -1,19 +1,19 @@
 import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 
-const services = [
-  { title: "Back Pain Relief", description: "Target acute & chronic lower back pain with structured home sessions to restore strength and pain-free movement.", image: "/images/services-back.jpg", tags: ["Lower Back", "Core Strength", "Pain Relief"] },
-  { title: "Neck Pain & Posture", description: "Cervical pain, posture-related issues and ergonomic correction to relieve neck stiffness and improve alignment.", image: "/images/services-sports.jpg", tags: ["Posture Training", "Cervical Mobility", "Ergonomics"] },
-  { title: "Knee Pain & Arthritis", description: "Non-surgical knee rehabilitation for arthritis, joint pain and instability — all at home.", image: "/images/services-surgery.jpg", tags: ["Joint Mobility", "Strengthening", "Pain Management"] },
-  { title: "Post-Surgery Rehab", description: "Recovery plans for knee, hip, spine and joint surgeries to rebuild strength and safe movement at home.", image: "/images/hero.jpg", tags: ["Safe Rehab", "Range of Motion", "Recovery"] },
-  { title: "Stroke & Neuro Recovery", description: "Long-term rehabilitation for paralysis and stroke patients with exercises to improve strength and independence.", image: "/images/about.jpg", tags: ["Neurological Rehab", "Balance", "Daily Living"] },
-  { title: "Elderly & Fall Prevention", description: "Strength, balance and independence training for seniors to reduce fall risk and enhance daily mobility.", image: "/images/services-back.jpg", tags: ["Balance", "Strength", "Confidence"] },
-  { title: "Sports Injury Recovery", description: "Rehabilitation for ligament tears, muscle injuries and athletes returning safely to peak performance.", image: "/images/services-sports.jpg", tags: ["Injury Rehab", "Conditioning", "Return to Sport"] },
-  { title: "Shoulder & Frozen Shoulder", description: "Target rotator cuff issues and frozen shoulder with guided mobility and strength training at home.", image: "/images/services-surgery.jpg", tags: ["Mobilization", "Strengthening", "Pain Relief"] },
-  { title: "Sciatica & Nerve Pain", description: "Relieve radiating pain and nerve compression through stretching, posture correction and targeted therapy.", image: "/images/hero.jpg", tags: ["Nerve Glide", "Posture", "Core Support"] },
-  { title: "Weight Loss & Exercise", description: "Rehab-based fat loss plus movement correction to improve fitness, posture and joint health.", image: "/images/about.jpg", tags: ["Cardio", "Strength", "Movement"] },
-  { title: "Women's Health & Postnatal", description: "Recovery after delivery with pelvic strengthening, core rebuilding and gentle postpartum physiotherapy.", image: "/images/services-back.jpg", tags: ["Pelvic Rehab", "Core Recovery", "Postnatal"] },
-  { title: "Home ICU & Bedridden Care", description: "Intensive physiotherapy for critical and bedridden patients including passive movement and respiratory support.", image: "/images/services-sports.jpg", tags: ["Bedridden Care", "Mobilization", "Respiratory"] },
+[
+  { title: "Back Pain Relief", description: "Target acute & chronic lower back pain with structured home sessions to restore strength and pain-free movement.", image: "/images/Massage_for_Middle_Back_Pain_60e6a96a-af82-4b13-81ff-33dc5b996011.jpg.webp", tags: ["Lower Back", "Core Strength", "Pain Relief"] },
+  { title: "Neck Pain & Posture", description: "Cervical pain, posture-related issues and ergonomic correction to relieve neck stiffness and improve alignment.", image: "/images/Neck-Pain-PT1.jpg", tags: ["Posture Training", "Cervical Mobility", "Ergonomics"] },
+  { title: "Knee Pain & Arthritis", description: "Non-surgical knee rehabilitation for arthritis, joint pain and instability — all at home.", image: "/images/668de6c88aeb7e042fe2d027_Stage 4 Arthritis Knee Treatment Breakthroughs.jpg", tags: ["Joint Mobility", "Strengthening", "Pain Management"] },
+  { title: "Post-Surgery Rehab", description: "Recovery plans for knee, hip, spine and joint surgeries to rebuild strength and safe movement at home.", image: "/images/post-surgical-rehab-5-1280x500-1.jpg.webp", tags: ["Safe Rehab", "Range of Motion", "Recovery"] },
+  { title: "Stroke & Neuro Recovery", description: "Long-term rehabilitation for paralysis and stroke patients with exercises to improve strength and independence.", image: "/images/How-Robotic-Therapy-Helps-Stroke-Patients-Recover-Faster-1024x576.png.webp", tags: ["Neurological Rehab", "Balance", "Daily Living"] },
+  { title: "Elderly & Fall Prevention", description: "Strength, balance and independence training for seniors to reduce fall risk and enhance daily mobility.", image: "/images/how to prevent patient falls in ten steps.svg", tags: ["Balance", "Strength", "Confidence"] },
+  { title: "Sports Injury Recovery", description: "Rehabilitation for ligament tears, muscle injuries and athletes returning safely to peak performance.", image: "/images/burlington-sports-injury-recovery-girl-with-resistance-band-on-ankle-physio.jpg", tags: ["Injury Rehab", "Conditioning", "Return to Sport"] },
+  { title: "Shoulder & Frozen Shoulder", description: "Target rotator cuff issues and frozen shoulder with guided mobility and strength training at home.", image: "/images/frozen-shoulder-treatments.jpg", tags: ["Mobilization", "Strengthening", "Pain Relief"] },
+  { title: "Sciatica & Nerve Pain", description: "Relieve radiating pain and nerve compression through stretching, posture correction and targeted therapy.", image: "/images/benefit-of-therapeutic-massage-for-sciatica-pain.jpg", tags: ["Nerve Glide", "Posture", "Core Support"] },
+  { title: "Weight Loss & Exercise", description: "Rehab-based fat loss plus movement correction to improve fitness, posture and joint health.", image: "/images/Weight-Loss-vs-Fat-Loss-Thmbnail-768x512.webp", tags: ["Cardio", "Strength", "Movement"] },
+  { title: "Women's Health & Postnatal", description: "Recovery after delivery with pelvic strengthening, core rebuilding and gentle postpartum physiotherapy.", image: "/images/Pregnancy-3-ways-physiotherapy-benefits-pre-and-postnatal-women-MAIN.jpg", tags: ["Pelvic Rehab", "Core Recovery", "Postnatal"] },
+  { title: "Home ICU & Bedridden Care", description: "Intensive physiotherapy for critical and bedridden patients including passive movement and respiratory support.", image: "/images/icu-2-1024x585.jpg", tags: ["Bedridden Care", "Mobilization", "Respiratory"] },
 ]
 
 const faqSchema = {
