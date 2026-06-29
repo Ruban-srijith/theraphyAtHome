@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 
-[
+const services = [
   { title: "Back Pain Relief", description: "Target acute & chronic lower back pain with structured home sessions to restore strength and pain-free movement.", image: "/images/Massage_for_Middle_Back_Pain_60e6a96a-af82-4b13-81ff-33dc5b996011.jpg.webp", tags: ["Lower Back", "Core Strength", "Pain Relief"] },
   { title: "Neck Pain & Posture", description: "Cervical pain, posture-related issues and ergonomic correction to relieve neck stiffness and improve alignment.", image: "/images/Neck-Pain-PT1.jpg", tags: ["Posture Training", "Cervical Mobility", "Ergonomics"] },
   { title: "Knee Pain & Arthritis", description: "Non-surgical knee rehabilitation for arthritis, joint pain and instability — all at home.", image: "/images/668de6c88aeb7e042fe2d027_Stage 4 Arthritis Knee Treatment Breakthroughs.jpg", tags: ["Joint Mobility", "Strengthening", "Pain Management"] },
