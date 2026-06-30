@@ -75,11 +75,11 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="relative py-28 bg-[#F7FAFE] lg:py-36 overflow-hidden">
+    <section id="contact" className="relative py-28 bg-[#F7FAFE] lg:py-36 overflow-hidden section-deferred-contact">
       {/* Background Blobs for Glassmorphism */}
       <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
-        <div className="absolute top-1/4 -left-48 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
-        <div className="absolute bottom-1/3 -right-48 h-96 w-96 rounded-full bg-secondary-foreground/10 blur-[120px]" />
+        <div className="absolute top-1/4 -left-48 h-96 w-96 rounded-full bg-primary/10 blur-[120px] blur-blob" />
+        <div className="absolute bottom-1/3 -right-48 h-96 w-96 rounded-full bg-secondary-foreground/10 blur-[120px] blur-blob" />
       </div>
 
       <div className="mx-auto max-w-6xl px-5 lg:px-8">

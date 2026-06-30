@@ -164,3 +164,38 @@ html.lenis, html.lenis body {
   border-color: var(--primary) !important;
 }
 
+/* GPU Acceleration for Glassmorphism & Blurs */
+.glass-panel, .glass-navbar, .glass-card {
+  will-change: transform, filter;
+  transform: translate3d(0, 0, 0);
+}
+
+.blur-blob {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+/* Rendering Performance: content-visibility for offscreen sections */
+.section-deferred-about {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+.section-deferred-services {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1200px;
+}
+.section-deferred-testimonials {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+.section-deferred-contact {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+.section-deferred-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 350px;
+}
+
+
