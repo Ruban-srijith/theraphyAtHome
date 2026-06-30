@@ -13,8 +13,8 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   icons: {
-    icon: { url: '/favicon.jpg', type: 'image/jpeg', sizes: '512x512' },
-    apple: '/favicon.jpg',
+    icon: { url: '/favicon2.jpg', type: 'image/jpeg', sizes: '512x512' },
+    apple: '/favicon2.jpg',
   },
   metadataBase: new URL('https://therapyathome.in'),
   title: 'Home Physiotherapy in Theni & Coimbatore| Neck & Back Pain Relief',
@@ -46,7 +46,7 @@ const schemaMarkup = {
   '@type': 'MedicalBusiness',
   name: 'Therapy at Home',
   url: 'https://therapyathome.in',
-  logo: 'https://therapyathome.in/favicon.jpg',
+  logo: 'https://therapyathome.in/favicon2.jpg',
   image: 'https://therapyathome.in/og-home.jpg',
   description: 'Therapy at Home provides professional in-home physiotherapy and pain relief services in Theni & Coimbatore.',
   address: {
