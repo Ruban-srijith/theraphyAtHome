@@ -16,7 +16,7 @@ export function About() {
           {/* Image */}
           <div className="relative order-last lg:order-first">
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-border">
-              <Image src="/images/about.jpg"
+              <Image src="/images/about.webp"
                 alt="Therapy at Home physiotherapist treating patient at home in Theni & Coimbatore"
                 width={600} height={450} className="h-full w-full object-cover" loading="lazy" />
             </div>

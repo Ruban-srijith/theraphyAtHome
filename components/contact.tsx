@@ -75,12 +75,20 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="relative py-28 bg-[#F7FAFE] lg:py-36">
+    <section id="contact" className="relative py-28 bg-[#F7FAFE] lg:py-36 overflow-hidden">
+      {/* Background Blobs for Glassmorphism */}
+      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div className="absolute top-1/4 -left-48 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
+        <div className="absolute bottom-1/3 -right-48 h-96 w-96 rounded-full bg-secondary-foreground/10 blur-[120px]" />
+      </div>
+
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
 
         {/* Header */}
-        <div className="mb-16 text-center">
-          <p className="text-sm font-bold uppercase tracking-widest text-primary mb-3">Contact</p>
+        <div className="mb-16 text-center flex flex-col items-center">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 border border-primary/20 backdrop-blur-md mb-4">
+            Contact
+          </span>
           <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-heading sm:text-5xl md:text-6xl">
             Book your home visit now.
           </h2>
@@ -92,7 +100,7 @@ export function Contact() {
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 items-start">
 
           {/* Form */}
-          <div className="rounded-2xl border border-border bg-white p-8 shadow-sm md:p-10">
+          <div className="rounded-2xl glass-card p-8 md:p-10">
             <h3 className="mb-8 text-2xl font-bold text-heading">Book an Appointment</h3>
 
             {submitState === "success" && (
@@ -120,24 +128,24 @@ export function Contact() {
               <div>
                 <label htmlFor="name" className="mb-2 block text-base font-medium text-foreground">Full Name</label>
                 <input id="name" name="name" type="text" required placeholder="Murugan K"
-                  className="w-full rounded-xl border border-border bg-[#F7FAFE] px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/15" />
+                  className="w-full rounded-xl glass-input px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:outline-none focus:ring-2 focus:ring-primary/15" />
               </div>
               <div className="grid gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="phone" className="mb-2 block text-base font-medium text-foreground">Phone</label>
                   <input id="phone" name="phone" type="tel" required placeholder="+91 98765 43210"
-                    className="w-full rounded-xl border border-border bg-[#F7FAFE] px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/15" />
+                    className="w-full rounded-xl glass-input px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:outline-none focus:ring-2 focus:ring-primary/15" />
                 </div>
                 <div>
                   <label htmlFor="email" className="mb-2 block text-base font-medium text-foreground">Email</label>
                   <input id="email" name="email" type="email" required placeholder="example@gmail.com"
-                    className="w-full rounded-xl border border-border bg-[#F7FAFE] px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/15" />
+                    className="w-full rounded-xl glass-input px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:outline-none focus:ring-2 focus:ring-primary/15" />
                 </div>
               </div>
               <div>
                 <label htmlFor="message" className="mb-2 block text-base font-medium text-foreground">Message</label>
                 <textarea id="message" name="message" rows={4} required placeholder="Tell us about your pain or condition..."
-                  className="w-full resize-none rounded-xl border border-border bg-[#F7FAFE] px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/15" />
+                  className="w-full resize-none rounded-xl glass-input px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/50 transition-all focus:outline-none focus:ring-2 focus:ring-primary/15" />
               </div>
               <button type="submit" disabled={submitState === "loading"}
                 className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-primary px-9 py-4 text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30 hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-70">
@@ -176,7 +184,7 @@ export function Contact() {
             ))}
 
             {/* Social links */}
-            <div className="rounded-2xl border border-border bg-white p-6 shadow-sm">
+            <div className="rounded-2xl glass-card p-6">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">Connect With Us</p>
               <div className="flex flex-col gap-3">
                 {socials.map((s) => (
@@ -190,11 +198,11 @@ export function Contact() {
             </div>
 
             {/* Why choose us */}
-            <div className="rounded-2xl border border-border bg-white p-6 shadow-sm">
+            <div className="rounded-2xl glass-card p-6">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-3">Why Choose Us</p>
               <div className="flex flex-wrap gap-2">
                 {["Home Visits", "Trained Therapists", "Flexible Timing", "Theni & Coimbatore"].map((item) => (
-                  <span key={item} className="rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground md:text-base">{item}</span>
+                  <span key={item} className="rounded-full border border-white/20 bg-white/40 backdrop-blur-sm px-4 py-2 text-sm font-medium text-secondary-foreground md:text-base">{item}</span>
                 ))}
               </div>
             </div>

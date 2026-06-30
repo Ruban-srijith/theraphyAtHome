@@ -60,7 +60,7 @@ export function Hero() {
           <div className="animate-fade-up delay-200 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="overflow-hidden rounded-[1.75rem] shadow-[0_20px_60px_rgba(15,23,42,0.10)] ring-1 ring-border aspect-square">
-                <Image src="/images/hero.jpg"
+                <Image src="/images/hero.webp"
                   alt="Home physiotherapy treatment for neck and back pain in Theni & Coimbatore"
                   
                   fill className="object-cover" priority />

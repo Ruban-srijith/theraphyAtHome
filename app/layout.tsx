@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
+import { LenisProvider } from '@/components/lenis-provider'
 import './globals.css'
 
 const jakarta = Plus_Jakarta_Sans({
@@ -70,7 +71,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="icon" href="/favicon2.jpg" type="image/jpeg" />
       </head>
       <body className="font-sans antialiased">
-        {children}
+        <LenisProvider>
+          {children}
+        </LenisProvider>
         <Analytics />
         <Script id="meta-pixel" strategy="afterInteractive">
           {`

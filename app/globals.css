@@ -103,3 +103,64 @@
 .delay-300 { animation-delay: 0.3s; }
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(10, 132, 255, 0.04) !important;
+}
+
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02) !important;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(12px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(160%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.03) !important;
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 15px 35px rgba(10, 132, 255, 0.07) !important;
+}
+
+/* Glass input/form controls */
+.glass-input {
+  background: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: var(--primary) !important;
+}
+

@@ -8,10 +8,18 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-28 lg:py-36">
+    <section id="testimonials" className="relative py-28 lg:py-36 overflow-hidden bg-white/30">
+      {/* Background Blobs for Glassmorphism */}
+      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div className="absolute top-1/3 -right-48 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
+        <div className="absolute bottom-1/3 -left-48 h-96 w-96 rounded-full bg-secondary-foreground/8 blur-[120px]" />
+      </div>
+
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
-        <div className="mb-16 text-center">
-          <p className="text-sm font-bold uppercase tracking-widest text-primary mb-3">Testimonials</p>
+        <div className="mb-16 text-center flex flex-col items-center">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 border border-primary/20 backdrop-blur-md mb-4">
+            Testimonials
+          </span>
           <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-heading sm:text-5xl md:text-6xl">
             Trusted by patients.
           </h2>
@@ -23,7 +31,7 @@ export function Testimonials() {
         <div className="grid gap-7 md:grid-cols-3">
           {testimonials.map((t) => (
             <div key={t.name}
-              className="flex flex-col rounded-2xl border border-border bg-white p-8 shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 duration-300">
+              className="flex flex-col rounded-2xl glass-card p-8 transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
               <div className="mb-5 flex gap-1">
                 {Array.from({ length: t.stars }).map((_, j) => (
                   <Star key={j} className="h-5 w-5 fill-amber-400 text-amber-400" />
