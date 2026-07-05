@@ -72,6 +72,22 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="font-sans antialiased">
         {children}
         <Analytics />
+
+        {/* Google Analytics GA4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RXHWEB51EN"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RXHWEB51EN');
+          `}
+        </Script>
+
+        {/* Meta Pixel */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -86,7 +102,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             fbq('track', 'PageView');
           `}
         </Script>
-        <noscript> 
+        <noscript>
           <img
             height="1"
             width="1"

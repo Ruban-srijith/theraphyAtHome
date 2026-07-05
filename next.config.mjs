@@ -26,6 +26,10 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
+  // Fix turbopack workspace detection
+  turbopack: {
+    root: '.',
+  },
 }
 
 export default nextConfig

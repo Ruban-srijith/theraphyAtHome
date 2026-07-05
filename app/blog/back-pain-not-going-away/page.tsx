@@ -89,18 +89,34 @@ export default function BackPainPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
       <article className="max-w-3xl mx-auto px-4 py-10">
         <h1 className="text-3xl font-bold mb-4">
           5 Reasons Your Neck and Back Pain Isn't Going Away (And What Actually Helps)
         </h1>
-        <p className="text-sm text-gray-500 mb-8">By  Mathan kumar D | Therapy at Home</p>
+        <p className="text-sm text-gray-500 mb-8">By Mathan kumar D | Therapy at Home</p>
 
         <p className="mb-6">
           If you've been dealing with neck or back pain for weeks — or even months — you're not alone.
           Millions of people in India live with chronic back and neck pain, taking painkillers every day,
           adjusting their posture, sleeping on different mattresses, and still waking up in pain.
         </p>
+
+        {/* Free Guide CTA */}
+        <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8 text-center">
+          <p className="text-lg font-semibold mb-1">🎁 Free Download: Neck Pain Relief Guide</p>
+          <p className="text-gray-600 mb-4 text-sm">
+            5 physiotherapist-approved exercises to relieve neck pain at home. Takes only 10 minutes a day.
+          </p>
+          
+          <a
+            href="/neck_pain_guide.html"
+            target="_blank"
+            className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700"
+          >
+            Download Free Guide
+          </a>
+        </div>
+
         <p className="mb-8">
           The frustrating truth? Most people are treating the <em>symptom</em>, not the <em>cause</em>.
           Here are five real reasons your pain keeps coming back — and what actually works to fix it.
@@ -196,32 +212,27 @@ export default function BackPainPost() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">Frequently Asked Questions</h2>
-
         <h3 className="text-lg font-semibold mt-6 mb-2">How long does back pain physiotherapy take to work?</h3>
         <p className="mb-4">
           Most patients notice meaningful improvement within 3–5 sessions. Full recovery from chronic back
           pain typically takes 4–8 weeks of consistent treatment, depending on severity and the underlying cause.
         </p>
-
         <h3 className="text-lg font-semibold mt-6 mb-2">Can Ayurvedic massage help with back pain?</h3>
         <p className="mb-4">
           Yes. Abhyanga (warm herbal oil massage) and steam therapy are effective for muscular back pain,
           reducing inflammation, and improving mobility. Combined with physiotherapy, results are often
           faster and longer-lasting.
         </p>
-
         <h3 className="text-lg font-semibold mt-6 mb-2">Is home physiotherapy as effective as clinic treatment?</h3>
         <p className="mb-4">
           Yes. For most musculoskeletal conditions, home physiotherapy is equally effective — and often
           more so, because the patient is relaxed, treatment is one-on-one, and there is no travel fatigue.
         </p>
-
         <h3 className="text-lg font-semibold mt-6 mb-2">What conditions does home physiotherapy treat?</h3>
         <p className="mb-4">
           Back pain, neck pain, knee pain, shoulder pain, post-surgical rehabilitation, stroke recovery,
           Parkinson's management, and sports injuries.
         </p>
-
         <h3 className="text-lg font-semibold mt-6 mb-2">How do I book a home physiotherapy session in Coimbatore or Theni?</h3>
         <p className="mb-6">
           Visit <a href="https://therapyathome.in" className="text-blue-600 underline">therapyathome.in</a> or
@@ -231,6 +242,7 @@ export default function BackPainPost() {
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-10 text-center">
           <p className="text-lg font-semibold mb-2">Ready to fix your pain at home?</p>
           <p className="text-gray-600 mb-4">Certified physiotherapy and Ayurvedic treatment delivered to your door in Coimbatore and Theni.</p>
+          
           <a
             href="https://therapyathome.in/#contact"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700"

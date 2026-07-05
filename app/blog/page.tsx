@@ -80,6 +80,14 @@ const posts = [
     tagColor: 'bg-yellow-100 text-yellow-700',
     readTime: '6 min read',
   },
+  {slug: 'knee-pain-not-going-away',  
+    title: 'Knee Pain Not Going Away? Here’s What You Need to Know',
+    description: 'Simple, physiotherapist-approved exercises to relieve knee pain at home. Takes only 10 minutes a day.',
+    tag: 'knee pain guide',
+    tagColor: 'bg-yellow-100 text-yellow-700',
+    readTime: '6 min read',
+  },
+
 ]
 
 export default function BlogIndex() {
