@@ -2,18 +2,18 @@ import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 
 const services = [
-  { title: "Back Pain Relief", description: "Target acute & chronic lower back pain with structured home sessions to restore strength and pain-free movement.", image: "/images/services-back.jpg", tags: ["Lower Back", "Core Strength", "Pain Relief"] },
-  { title: "Neck Pain & Posture", description: "Cervical pain, posture-related issues and ergonomic correction to relieve neck stiffness and improve alignment.", image: "/images/services-sports.jpg", tags: ["Posture Training", "Cervical Mobility", "Ergonomics"] },
-  { title: "Knee Pain & Arthritis", description: "Non-surgical knee rehabilitation for arthritis, joint pain and instability — all at home.", image: "/images/services-surgery.jpg", tags: ["Joint Mobility", "Strengthening", "Pain Management"] },
-  { title: "Post-Surgery Rehab", description: "Recovery plans for knee, hip, spine and joint surgeries to rebuild strength and safe movement at home.", image: "/images/hero.jpg", tags: ["Safe Rehab", "Range of Motion", "Recovery"] },
-  { title: "Stroke & Neuro Recovery", description: "Long-term rehabilitation for paralysis and stroke patients with exercises to improve strength and independence.", image: "/images/about.jpg", tags: ["Neurological Rehab", "Balance", "Daily Living"] },
-  { title: "Elderly & Fall Prevention", description: "Strength, balance and independence training for seniors to reduce fall risk and enhance daily mobility.", image: "/images/services-back.jpg", tags: ["Balance", "Strength", "Confidence"] },
-  { title: "Sports Injury Recovery", description: "Rehabilitation for ligament tears, muscle injuries and athletes returning safely to peak performance.", image: "/images/services-sports.jpg", tags: ["Injury Rehab", "Conditioning", "Return to Sport"] },
-  { title: "Shoulder & Frozen Shoulder", description: "Target rotator cuff issues and frozen shoulder with guided mobility and strength training at home.", image: "/images/services-surgery.jpg", tags: ["Mobilization", "Strengthening", "Pain Relief"] },
-  { title: "Sciatica & Nerve Pain", description: "Relieve radiating pain and nerve compression through stretching, posture correction and targeted therapy.", image: "/images/hero.jpg", tags: ["Nerve Glide", "Posture", "Core Support"] },
-  { title: "Weight Loss & Exercise", description: "Rehab-based fat loss plus movement correction to improve fitness, posture and joint health.", image: "/images/about.jpg", tags: ["Cardio", "Strength", "Movement"] },
-  { title: "Women's Health & Postnatal", description: "Recovery after delivery with pelvic strengthening, core rebuilding and gentle postpartum physiotherapy.", image: "/images/services-back.jpg", tags: ["Pelvic Rehab", "Core Recovery", "Postnatal"] },
-  { title: "Home ICU & Bedridden Care", description: "Intensive physiotherapy for critical and bedridden patients including passive movement and respiratory support.", image: "/images/services-sports.jpg", tags: ["Bedridden Care", "Mobilization", "Respiratory"] },
+  { title: "Back Pain Relief", description: "Target acute & chronic lower back pain with structured home sessions to restore strength and pain-free movement.", image: "/images/Massage_for_Middle_Back_Pain_60e6a96a-af82-4b13-81ff-33dc5b996011.jpg.webp", tags: ["Lower Back", "Core Strength", "Pain Relief"] },
+  { title: "Neck Pain & Posture", description: "Cervical pain, posture-related issues and ergonomic correction to relieve neck stiffness and improve alignment.", image: "/images/neck-pain-pt1.webp", tags: ["Posture Training", "Cervical Mobility", "Ergonomics"] },
+  { title: "Knee Pain & Arthritis", description: "Non-surgical knee rehabilitation for arthritis, joint pain and instability — all at home.", image: "/images/knee-pain-arthritis.webp", tags: ["Joint Mobility", "Strengthening", "Pain Management"] },
+  { title: "Post-Surgery Rehab", description: "Recovery plans for knee, hip, spine and joint surgeries to rebuild strength and safe movement at home.", image: "/images/post-surgical-rehab-5-1280x500-1.jpg.webp", tags: ["Safe Rehab", "Range of Motion", "Recovery"] },
+  { title: "Stroke & Neuro Recovery", description: "Long-term rehabilitation for paralysis and stroke patients with exercises to improve strength and independence.", image: "/images/How-Robotic-Therapy-Helps-Stroke-Patients-Recover-Faster-1024x576.png.webp", tags: ["Neurological Rehab", "Balance", "Daily Living"] },
+  { title: "Elderly & Fall Prevention", description: "Strength, balance and independence training for seniors to reduce fall risk and enhance daily mobility.", image: "/images/how-to-prevent-patient-falls.webp", tags: ["Balance", "Strength", "Confidence"] },
+  { title: "Sports Injury Recovery", description: "Rehabilitation for ligament tears, muscle injuries and athletes returning safely to peak performance.", image: "/images/sports-injury-recovery.webp", tags: ["Injury Rehab", "Conditioning", "Return to Sport"] },
+  { title: "Shoulder & Frozen Shoulder", description: "Target rotator cuff issues and frozen shoulder with guided mobility and strength training at home.", image: "/images/frozen-shoulder-treatments.webp", tags: ["Mobilization", "Strengthening", "Pain Relief"] },
+  { title: "Sciatica & Nerve Pain", description: "Relieve radiating pain and nerve compression through stretching, posture correction and targeted therapy.", image: "/images/benefit-of-therapeutic-massage-for-sciatica-pain.webp", tags: ["Nerve Glide", "Posture", "Core Support"] },
+  { title: "Weight Loss & Exercise", description: "Rehab-based fat loss plus movement correction to improve fitness, posture and joint health.", image: "/images/Weight-Loss-vs-Fat-Loss-Thmbnail-768x512.webp", tags: ["Cardio", "Strength", "Movement"] },
+  { title: "Women's Health & Postnatal", description: "Recovery after delivery with pelvic strengthening, core rebuilding and gentle postpartum physiotherapy.", image: "/images/pregnancy-physiotherapy-benefits.webp", tags: ["Pelvic Rehab", "Core Recovery", "Postnatal"] },
+  { title: "Home ICU & Bedridden Care", description: "Intensive physiotherapy for critical and bedridden patients including passive movement and respiratory support.", image: "/images/icu-care.webp", tags: ["Bedridden Care", "Mobilization", "Respiratory"] },
 ]
 
 const faqSchema = {
@@ -27,12 +27,20 @@ const faqSchema = {
 
 export function Services() {
   return (
-    <section id="services" className="relative py-28 bg-[#F7FAFE] lg:py-36">
+    <section id="services" className="relative py-28 bg-[#F7FAFE] lg:py-36 overflow-hidden section-deferred-services">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
+      {/* Background Blobs for Glassmorphism */}
+      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div className="absolute top-1/4 -left-48 h-96 w-96 rounded-full bg-primary/10 blur-[120px] blur-blob" />
+        <div className="absolute bottom-1/4 -right-48 h-96 w-96 rounded-full bg-secondary-foreground/10 blur-[120px] blur-blob" />
+      </div>
+
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
-        <div className="mb-14 text-center">
-          <p className="text-sm font-bold uppercase tracking-widest text-primary mb-3">What We Treat</p>
+        <div className="mb-14 text-center flex flex-col items-center">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 border border-primary/20 backdrop-blur-md mb-4">
+            What We Treat
+          </span>
           <h2 className="text-4xl font-extrabold tracking-tight text-heading sm:text-5xl">Our Services</h2>
           <p className="mt-4 text-lg font-medium text-foreground/70 max-w-2xl mx-auto md:text-xl">
             Professional physiotherapy and Ayurveda treatments — delivered to your home.
@@ -42,7 +50,7 @@ export function Services() {
         <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div key={service.title}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+              className="group flex flex-col overflow-hidden rounded-2xl glass-card glass-card-hover transition-all duration-300 hover:-translate-y-1">
               <div className="relative h-48 w-full overflow-hidden">
                 <Image src={service.image} alt={service.title} fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />

@@ -32,7 +32,7 @@ export function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? "bg-white/95 backdrop-blur-md shadow-[0_1px_0_0_rgba(0,0,0,0.06)]" : "bg-transparent"
+      scrolled ? "glass-navbar" : "bg-transparent"
     }`}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#" onClick={(e) => handleSmoothScroll(e, "#")}
@@ -62,7 +62,7 @@ export function Navbar() {
         </button>
       </div>
 
-      <div className={`overflow-hidden bg-white/98 backdrop-blur-md md:hidden border-t border-border/50 transition-all duration-300 ${
+      <div className={`overflow-hidden glass-panel md:hidden transition-all duration-300 ${
         mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
       }`}>
         <div className="flex flex-col gap-1 px-5 py-4">

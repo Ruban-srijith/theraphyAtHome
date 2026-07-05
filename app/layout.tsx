@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
+import { LenisProvider } from '@/components/lenis-provider'
 import './globals.css'
 
 const jakarta = Plus_Jakarta_Sans({
@@ -11,10 +12,6 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  icons: {
-    icon: { url: '/favicon.jpg', type: 'image/jpeg', sizes: '512x512' },
-    apple: '/favicon.jpg',
-  },
   metadataBase: new URL('https://therapyathome.in'),
   title: 'Home Physiotherapy in Theni & Coimbatore| Neck & Back Pain Relief',
   description:
@@ -45,7 +42,7 @@ const schemaMarkup = {
   '@type': 'MedicalBusiness',
   name: 'Therapy at Home',
   url: 'https://therapyathome.in',
-  logo: 'https://therapyathome.in/favicon.jpg',
+  logo: 'https://therapyathome.in/favicon2.jpg',
   image: 'https://therapyathome.in/og-home.jpg',
   description: 'Therapy at Home provides professional in-home physiotherapy and pain relief services in Theni & Coimbatore.',
   address: {
@@ -67,10 +64,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <meta name="facebook-domain-verification" content="3iw7zhbq5uwwhujdghb6hrcl2z46ur" />
         <script id="schema-markup" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
-        <link rel="icon" href="/favicon2.jpg" type="image/jpeg" />
       </head>
       <body className="font-sans antialiased">
-        {children}
+        <LenisProvider>
+          {children}
+        </LenisProvider>
         <Analytics />
 
         {/* Google Analytics GA4 */}

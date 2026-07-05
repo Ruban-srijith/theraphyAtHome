@@ -34,7 +34,7 @@ const socials = [
 export function Footer() {
   const year = new Date().getFullYear()
   return (
-    <footer className="border-t border-border bg-white py-12">
+    <footer className="border-t border-border bg-white py-12 section-deferred-footer">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex flex-col items-center gap-1.5 md:items-start">

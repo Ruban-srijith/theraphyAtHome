@@ -9,18 +9,18 @@ const stats = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-28 lg:py-36">
+    <section id="about" className="relative py-28 lg:py-36 section-deferred-about">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
 
           {/* Image */}
           <div className="relative order-last lg:order-first">
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-border">
-              <Image src="/images/about.jpg"
+              <Image src="/images/about.webp"
                 alt="Therapy at Home physiotherapist treating patient at home in Theni & Coimbatore"
                 width={600} height={450} className="h-full w-full object-cover" loading="lazy" />
             </div>
-            <div className="absolute -bottom-6 -right-4 rounded-2xl border border-border bg-white px-6 py-5 shadow-xl">
+            <div className="absolute -bottom-6 -right-4 rounded-2xl glass-card px-6 py-5 shadow-xl">
               <p className="text-3xl font-extrabold text-primary">4.9★</p>
               <p className="mt-1 text-sm text-muted-foreground">Patient Rating</p>
             </div>
@@ -41,7 +41,7 @@ export function About() {
 
             <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
               {stats.map((stat) => (
-                <div key={stat.label} className="rounded-2xl border border-border bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+                <div key={stat.label} className="rounded-2xl glass-card p-5 transition-shadow hover:shadow-md">
                   <p className="text-3xl font-extrabold text-heading md:text-4xl">{stat.value}</p>
                   <p className="mt-1.5 text-sm text-muted-foreground md:text-base">{stat.label}</p>
                 </div>
