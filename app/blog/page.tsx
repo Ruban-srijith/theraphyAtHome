@@ -63,6 +63,15 @@ const posts = [
     readTime: '8 min read',
   },
   {
+    slug: 'why-home-physiotherapy-treatment-growing-india',
+    title: 'Why Home Physiotherapy Treatment Is Growing in India',
+    description:
+      'Explore why home physiotherapy is becoming the preferred choice in India for pain relief, recovery, and family-centered care.',
+    tag: 'India Growth',
+    tagColor: 'bg-orange-100 text-orange-700',
+    readTime: '5 min read',
+  },
+  {
     slug: 'home-physiotherapy-vs-clinic-coimbatore',
     title: 'Home Physiotherapy vs Clinic: Which is Better for Back Pain in Coimbatore?',
     description:
