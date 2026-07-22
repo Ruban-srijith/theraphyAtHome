@@ -96,6 +96,46 @@ const posts = [
     tagColor: 'bg-yellow-100 text-yellow-700',
     readTime: '6 min read',
   },
+  {
+  slug: 'frozen-shoulder-home-physiotherapy',
+  title: 'Frozen Shoulder Pain? Home Physiotherapy Exercises That Actually Work',
+  description: 'Stage-by-stage exercises to safely regain shoulder movement at home. Takes only 10 minutes a day.',
+  tag: 'shoulder pain guide',
+  tagColor: 'bg-orange-100 text-orange-700',
+  readTime: '7 min read',
+},
+{
+  slug: 'sciatica-pain-relief-at-home',
+  title: 'Sciatica Pain Relief at Home: Causes, Exercises & When to See a Physio',
+  description: 'Physiotherapist-approved nerve-gliding exercises and stretches to relieve sciatica at home. Takes only 10 minutes a day.',
+  tag: 'sciatica guide',
+  tagColor: 'bg-red-100 text-red-700',
+  readTime: '8 min read',
+},
+{
+  slug: 'cervical-spondylosis-desk-jobs',
+  title: 'Cervical Spondylosis: Why Desk Jobs Are Wrecking Your Neck (and How to Fix It)',
+  description: 'That daily neck stiffness after work isn\'t normal aging — it\'s desk-job neck damage, and it\'s fixable.',
+  tag: 'neck pain guide',
+  tagColor: 'bg-blue-100 text-blue-700',
+  readTime: '7 min read',
+},
+{
+  slug: 'arthritis-elderly-parents-home-care',
+  title: 'Arthritis and Joint Pain in Elderly Parents: A Home Care Guide for Families',
+  description: 'Gentle, physiotherapist-approved exercises and a home safety checklist for families caring for aging parents with arthritis.',
+  tag: 'elderly care guide',
+  tagColor: 'bg-purple-100 text-purple-700',
+  readTime: '8 min read',
+},
+{
+  slug: 'plantain-leaf-bath-therapy',
+  title: 'Plantain Leaf Bath Therapy: Ayurvedic Pain Relief Explained',
+  description: 'A traditional Ayurvedic sudation treatment for back, neck, and joint pain — and why it works differently from a spa treatment.',
+  tag: 'ayurvedic therapy guide',
+  tagColor: 'bg-amber-100 text-amber-700',
+  readTime: '7 min read',
+},
 
 ]
 
